@@ -1,1 +1,154 @@
-/* You can add global styles to this file, and also import other style files */
+/* /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+
+html, body, material-app, mat-sidenav-container, .my-content {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+.mat-toolbar.app-header {
+    color: rgba(255, 255, 255, 0.87);
+    background: rgb(38, 50, 56);
+}
+
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .fill-remaining-space {
+    flex: 1 1 auto;
+  }
+
+  .user-sidenav{
+    width: 260px;
+    height: 100%;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    border-radius: 4px;
+    margin: 5px 0 0 0;  
+  }
+  .user-sidenav ul {
+    list-style: circle;
+  }
+  .mat-toolbar.user-right-header {
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #eaeaea;
+    margin: 0 0 27px 0;
+  }
+
+  .mat-button.close-right-button {
+    margin: 0 -11px 0 0;
+    min-width: 0px;
+    min-height: 0px;
+    padding: 0 2px;
+    line-height: 28px;
+  }
+  .admin-sidenav {
+    height: 100%;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    /* padding: 20px 0 0 0;
+    margin: 10px 0 0 0px;
+    border-radius: 0 4px 0 0; */
+}
+
+.admin-sidenav  .mat-toolbar.app-header {
+ margin: 0 0 30px 0;
+}
+
+
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+    background: #fff;
+    border-radius: 3px 3px 0 0;
+}
+
+.admin-center {
+  display: block;
+  margin: 5px;
+  height: 100%; 
+}
+.example-sidenav-content {
+    display: block;
+    margin: 5px;
+  /* height: 100%; 
+  margin: 15px 0 15px 15px;
+  align-items: center;
+  justify-content: center;  */
+}
+      
+.example-sidenav {
+        padding: 20px;
+        height: 100%;
+}
+      
+
+
+.mat-drawer-container {
+        background-color: #e0e0e0;
+}
+
+  .mat-list .mat-subheader, .mat-nav-list .mat-subheader, .mat-selection-list .mat-subheader {
+    height: 0;
+    line-height: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #757575;
+}
+
+  mat-nav-list [mat-list-item].active mat-icon[matlistavatar] {
+    background-color: rgb(255, 109, 0);
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.mat-list .mat-list-item .mat-list-avatar, .mat-nav-list .mat-list-item .mat-list-avatar, .mat-selection-list .mat-list-item .mat-list-avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.mat-list-item-content mat-icon[matlistavatar], mat-list-item mat-icon[matlistavatar] {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+mat-list a[mat-list-item] [matlistavatar], mat-list mat-list-item [matlistavatar], mat-nav-list a[mat-list-item] [matlistavatar], mat-nav-list mat-list-item [matlistavatar] {
+  min-width: 40px;
+}
+.mat-list-item-content mat-icon[matlistavatar], mat-list-item mat-icon[matlistavatar] {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+mat-sidenav .mat-list-item-content mat-icon {
+  margin-left: 0px;
+  margin-right: 16px;
+  color: rgb(115, 115, 115);
+  fill: rgb(115, 115, 115);
+}
+
+
+/* mat-nav-list [mat-list-item].active mat-list-item-content  {
+  background-color: rgba(255, 255, 255, 0.87);
+
+}         */
+.mat-nav-list .active  {
+  background-color: rgb(245, 245, 245);
+}
+
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #ff6d00;
+}
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: rgb(255, 221, 196);
+} 

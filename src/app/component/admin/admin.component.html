@@ -1,0 +1,47 @@
+
+<mat-sidenav-container >
+    <admin-header></admin-header>
+   <mat-sidenav 
+      #left position="start"
+        opened="true" 
+        mode="side"
+        class="admin-sidenav">
+
+
+        <mat-toolbar>
+
+            <span class="spacer"></span>
+            <span>
+                    <mat-icon style="cursor:pointer" (click)="toggleLeft()">menu</mat-icon>
+            </span>
+        
+         
+          </mat-toolbar> 
+    <admin-left></admin-left>
+    </mat-sidenav>
+
+         
+           
+    <div class="admin-center" style="overflow:hidden">
+           <router-outlet></router-outlet>
+           
+    </div>
+   
+    
+    </mat-sidenav-container>
+<!-- 
+<nb-layout>
+ 
+  
+  <nb-sidebar>
+      <admin-left></admin-left>
+  </nb-sidebar>
+
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>  
+  </nb-layout-column>
+
+</nb-layout>
+
+ -->

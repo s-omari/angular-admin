@@ -1,0 +1,31 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    height: 550px;
+  }
+
+  .highlight{
+    background:  rgb(245, 245, 245); /* green */
+  }
+
+  .mat-row:hover {
+    background-color: #e0e0e0;
+}
+.mat-row {
+  cursor: pointer;
+}

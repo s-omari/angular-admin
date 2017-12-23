@@ -1,0 +1,18 @@
+<mat-toolbar class="user-right-header">
+    <span>{{user?.username}}</span>
+    <span class="fill-remaining-space"></span>
+    <span>
+        <button class="close-right-button" mat-button (click)="closeRight()">
+        <mat-icon>close</mat-icon>
+    </button>
+</span>
+</mat-toolbar>
+
+<ul>
+<li><b>id:</b> {{user?.id}}</li>
+<li> <b>First name:</b> {{user?.firstName}}</li>
+<li> <b>Last name:</b> {{user?.lastName}}</li>
+<li><b>username:</b> {{user?.username}}</li>
+<li><b>email:</b> {{user?.email}}</li>
+<li><b>age:</b> {{user?.age}}</li>
+</ul>

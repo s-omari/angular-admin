@@ -1,0 +1,58 @@
+<mat-sidenav-container>         
+              
+<div class="example-sidenav-content">
+ 
+        <!-- <data-table 
+        [data]="data" 
+        (onSelect)="onItemSelect($event) ">
+        </data-table>   -->
+        
+        <users-table (onSelect)="onItemSelect($event)"></users-table>
+  
+</div>
+
+  <mat-sidenav 
+  #right position="end"
+
+  mode="side"
+  open="false"
+  class="user-sidenav">
+
+    <users-right 
+    (onCloseRight)="closeUserRight()"
+    [user]="selectedUserData" 
+    *ngIf="isUserSelected">
+    </users-right>
+
+  </mat-sidenav>   
+      
+</mat-sidenav-container>
+
+
+
+
+<!-- <ng2-smart-table 
+    [settings]="settings"
+    [source]="data"
+    (deleteConfirm)="onDeleteConfirm($event)" ></ng2-smart-table>
+ -->
+
+    <!-- <nb-card setSize="xxlarge">
+            <nb-card-header>
+              User Management
+            </nb-card-header>
+          
+            <nb-card-body >
+      
+              <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+              </ng2-smart-table>
+
+
+            </nb-card-body>
+          </nb-card>
+           -->
+
+
+
+
+

@@ -1,0 +1,30 @@
+<div *ngIf="table" class="row-fluid">
+
+
+<div class="">
+<input
+type="text" 
+class="form-control col-md-12 datatable-filter-input"
+type="text" 
+[(ngModel)]="term"
+placeholder="filter">
+</div>
+		
+</div>
+<table class="table table-bordered " >
+
+	<tr *ngFor=" let item of data ; let i = index ">
+
+		<td width="20">{{item.id}} </td>
+		
+		<td>   {{item.firstName}} </td>
+		
+		<td width="50">
+			<button mat-button 
+			(click)="SelectItem(item)">
+			<mat-icon>remove_red_eye</mat-icon>
+			</button>
+		</td>
+		
+	</tr>
+</table>

@@ -1,0 +1,55 @@
+<div class="example-header">
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+</div>
+
+<div class="example-container mat-elevation-z8">
+
+  <mat-table [dataSource]="dataSource" matSort>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+    </ng-container>
+
+    <!-- firstName Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.firstName}} {{row.lastName}}</mat-cell>
+    </ng-container>
+
+    <!-- username Column -->
+    <ng-container matColumnDef="username">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Username </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.username}} </mat-cell>
+    </ng-container>
+
+
+    
+
+        <ng-container matColumnDef="active">
+          <mat-header-cell *matHeaderCellDef > Active </mat-header-cell>
+          <mat-cell *matCellDef="let row" > 
+              <!-- <button mat-button >
+              <mat-icon>remove_red_eye</mat-icon>
+              </button>  -->
+            
+              <mat-slide-toggle [checked]="row.active">{{row.active}}</mat-slide-toggle>
+            </mat-cell>
+        </ng-container>
+
+
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"
+    [ngClass]="{'highlight': selectedRowId == row.id}"
+     (click)="SelectItem(row) ; highlight(row)"></mat-row>
+
+
+  </mat-table>
+
+  <mat-paginator [pageSizeOptions]="[10, 25 ]"></mat-paginator>
+</div>
