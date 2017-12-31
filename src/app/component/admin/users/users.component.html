@@ -1,14 +1,66 @@
-<mat-sidenav-container>         
-              
+<div fxFlex >
+    <mat-sidenav-container >   
+
+
 <div class="example-sidenav-content">
- 
-        <!-- <data-table 
+
+
+    <mat-toolbar  >User List</mat-toolbar>
+
+    <div >
+        <users-table (onSelect)="onItemSelect($event)"></users-table>
+    </div>
+      
+
+
+
+    <!-- <div class="main-container"   fxLayout="column" fxLayoutAlign="space-between none">
+
+        <mat-toolbar fxFlex >ya</mat-toolbar>
+    
+          <div fxFlex="1" >
+              <users-table (onSelect)="onItemSelect($event)"></users-table>
+          </div>
+              <mat-toolbar fxFlex >ya</mat-toolbar>
+</div>          -->
+</div>
+
+
+
+      <mat-sidenav 
+      #right position="end"
+    
+      mode="side"
+      open="false"
+      class="user-sidenav">
+    
+        <users-right 
+        (onCloseRight)="closeUserRight()"
+        [user]="selectedUserData" 
+        *ngIf="isUserSelected">
+        </users-right>
+    
+      </mat-sidenav>   
+      
+      </mat-sidenav-container>
+
+    </div>
+
+
+
+
+
+
+
+<!-- <data-table 
         [data]="data" 
         (onSelect)="onItemSelect($event) ">
         </data-table>   -->
         
-        <users-table (onSelect)="onItemSelect($event)"></users-table>
-  
+<!-- <mat-sidenav-container>         
+      
+<div class="example-sidenav-content">
+         <users-table (onSelect)="onItemSelect($event)"></users-table>
 </div>
 
   <mat-sidenav 
@@ -26,7 +78,45 @@
 
   </mat-sidenav>   
       
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

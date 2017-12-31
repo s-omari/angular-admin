@@ -1,34 +1,134 @@
 
-<mat-sidenav-container >
+
+<div class="main-container"    fxLayout="column">
+    <header>
+        <app-header></app-header>
+    </header>
+    <div fxFlex="1" >
+        <!-- <router-outlet ></router-outlet> -->
+
+        <div fxLayout="column" fxFlex>
+
+ 
+          
+            <mat-sidenav-container fxFlex>
+              <mat-sidenav 
+              #left position="start"
+                mode="side" opened>
+                
+                  <admin-left></admin-left>
+
+              </mat-sidenav>
+
+               <div  class="main-container"  fxLayout="column" >
+
+                  <mat-toolbar>
+                      <mat-toolbar-row>
+                        <span *ngIf="currentPage"> {{ currentPage}} </span>
+                      </mat-toolbar-row>
+                    </mat-toolbar>
+                    <div fxFlex="1" >
+                     
+                        <router-outlet ></router-outlet> 
+
+                    </div>
+                <mat-toolbar>
+                    <mat-toolbar-row>
+                      <span>footer</span>
+                    </mat-toolbar-row>
+                  </mat-toolbar>
+              </div>
+            </mat-sidenav-container>
+  
+
+          
+          </div>
+        
+    </div>
+
+  </div>
+
+
+     
+
+
+
+<!-- <div fxLayout="column" fxFlex >
+
+
+
+<mat-sidenav-container>
+           <div  fxLayout="row" fxLayoutAlign=" none">
+
+              <mat-sidenav 
+              
+              #left position="start"
+                opened="true" 
+                mode="side"
+                class="admin-sidenav"
+                
+                >
+                <admin-left></admin-left>
+              </mat-sidenav>
+
+              <div  class="admin-center" style="background:rgb(248, 236, 69)" >
+                  <router-outlet></router-outlet>
+                  
+           </div>
+
+              </div>
+            </mat-sidenav-container>
+
+
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+<!-- <mat-sidenav-container class="main-container"  fxLayout="row" fxLayoutAlign=" none">
     <admin-header></admin-header>
+    <div  >
    <mat-sidenav 
       #left position="start"
         opened="true" 
         mode="side"
-        class="admin-sidenav">
+        class="admin-sidenav"
+        fxFlex="30%">
 
 
         <mat-toolbar>
-
             <span class="spacer"></span>
             <span>
-                    <mat-icon style="cursor:pointer" (click)="toggleLeft()">menu</mat-icon>
+            <mat-icon style="cursor:pointer" (click)="toggleLeft()">menu</mat-icon>
             </span>
-        
-         
           </mat-toolbar> 
+
     <admin-left></admin-left>
     </mat-sidenav>
 
          
            
-    <div class="admin-center" style="overflow:hidden">
-           <router-outlet></router-outlet>
-           
+    <div  class="admin-center" >
+           <router-outlet></router-outlet>       
     </div>
+
+  </div>
    
     
-    </mat-sidenav-container>
+    </mat-sidenav-container> -->
 <!-- 
 <nb-layout>
  

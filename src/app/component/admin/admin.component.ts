@@ -14,6 +14,7 @@ import {
 })
 export class AdminComponent implements OnInit {
   item : any;
+  currentPage : string;
   constructor() { }
 
 
@@ -39,6 +40,7 @@ export class AdminComponent implements OnInit {
 		console.log('selected ID: '+selected.id);
 		//this.index = index;
     this.item = selected;
+    this.currentPage = selected.title;
     console.log(selected);
 
 

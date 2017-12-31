@@ -1,6 +1,13 @@
 
     
-    
+   
+   <div fxLayout="column" >
+           <mat-toolbar>
+                <span class="spacer"></span>
+                <span>
+                <mat-icon style="cursor:pointer" (click)="toggleLeft()">menu</mat-icon>
+                </span>
+            </mat-toolbar>
     <mat-nav-list>
 
         <ng-template let-item let-last="last" ngFor [ngForOf]="menu_items">
@@ -16,3 +23,5 @@
 
 
       </mat-nav-list>
+
+    </div>
