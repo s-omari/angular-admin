@@ -13,21 +13,27 @@ import {
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
+  
   item : any;
   currentPage : string;
+
+  shrinkLeft : boolean=false;
+  
   constructor() { }
 
-
   @ViewChild('left') LeftSidenav ;
-
 
   ngOnInit() {
   }
 
   menu_items = MENU_ITEMS;
 
-
-
+  toggleLeftShrink() {
+    if( this.shrinkLeft) {this.shrinkLeft = false}
+    else { this.shrinkLeft = true;}
+    console.log("this.shrinkLeft: "+ this.shrinkLeft);
+    
+  }
   toggleAdminLeft() {
     this.LeftSidenav.toggle()
   }

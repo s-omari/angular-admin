@@ -15,8 +15,13 @@
               <mat-sidenav 
               #left position="start"
                 mode="side" opened>
-                
-                  <admin-left></admin-left>
+                <mat-toolbar>
+                    <span class="spacer"></span>
+                    <span>
+                    <mat-icon style="cursor:pointer" (click)="toggleLeftShrink()">menu</mat-icon>
+                    </span>
+                </mat-toolbar>
+                  <admin-left [shrinkLeft]="shrinkLeft"></admin-left>
 
               </mat-sidenav>
 

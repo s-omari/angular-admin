@@ -2,12 +2,7 @@
     
    
    <div fxLayout="column" >
-           <mat-toolbar>
-                <span class="spacer"></span>
-                <span>
-                <mat-icon style="cursor:pointer" (click)="toggleLeft()">menu</mat-icon>
-                </span>
-            </mat-toolbar>
+
     <mat-nav-list>
 
         <ng-template let-item let-last="last" ngFor [ngForOf]="menu_items">
@@ -15,7 +10,8 @@
             routerLink="{{ item.link }}"
             routerLinkActive="active">
               <mat-icon matListAvatar>{{item.icon}}</mat-icon>
-              <h3 matLine> {{item.title}} </h3>
+              
+              <h3 *ngIf="shrinkRight" matLine> {{item.title}} </h3>
               <!-- <p matLine> {{item.description}} </p> -->
             </a>
             <!-- <mat-divider matInset *ngIf="!last"></mat-divider> -->

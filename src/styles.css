@@ -69,11 +69,12 @@ header , footer {
   }
 
   .user-sidenav{
-    width: 260px;
+    width: 380px;
     height: 100%;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     border-radius: 4px;
     margin: 5px 0 0 0;  
+    
   }
   .user-sidenav ul {
     list-style: circle;
@@ -84,6 +85,7 @@ header , footer {
     font-weight: bold;
     border-bottom: 1px solid #eaeaea;
     margin: 0 0 27px 0;
+    background: #ff6d00;
   }
 
   .mat-button.close-right-button {
@@ -120,7 +122,7 @@ header , footer {
 .example-sidenav-content {
     display: block;
     margin: 5px;
-    padding-bottom: 25px;
+    
   /* height: 100%; 
   margin: 15px 0 15px 15px;
   align-items: center;
@@ -172,7 +174,7 @@ mat-list a[mat-list-item] [matlistavatar], mat-list mat-list-item [matlistavatar
 
 mat-sidenav .mat-list-item-content mat-icon {
   margin-left: 0px;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   color: rgb(115, 115, 115);
   fill: rgb(115, 115, 115);
 }
@@ -188,9 +190,9 @@ mat-sidenav .mat-list-item-content mat-icon {
 
 
 .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
-  background-color: #ff6d00;
+  background-color: #40dc7e;
 }
 
 .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-  background-color: rgb(255, 221, 196);
+  background-color: #c7f7da;
 } 
