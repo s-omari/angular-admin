@@ -5,7 +5,7 @@ Responsive/adaptive layout , Redux State management , login authentecation ..
 The goal here as to have a sepeate angular project that could be used as a starter without limiting the developer options for the data source/back-end and so , the application will use an online json client such as json placeholder for the data.
 
 
-| Feature | Implementation with.. | current progress |
+| Feature | Suggested Implementation.. | current progress |
 | --- | --- | --- |
 | Responsive/adaptive layout | [flex-layout](https://github.com/angular/material2)  and   [flex-layout](https://github.com/angular/flex-layout). | started |
 | Redux State management | [NGRX4](https://github.com/ngrx/platform)   | not started |
