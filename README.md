@@ -1,8 +1,8 @@
 # A modern Anguar5 Admin starter application
-the goal of this repository is to have a starter admin panel written in angular and following modern application pronciples.
-Responsive/adaptive layout , Redux State management , login authentecation .. 
+The goal of this repository is to have a starter admin panel written in angular and following modern application principles.
+Responsive/adaptive layout , Redux State management , login authentication .. 
 
-The goal here as to have a sepeate angular project that could be used as a starter without limiting the developer options for the data source/back-end and so , the application will use an online json client such as json placeholder for the data.
+The goal here as to have a separate angular project that could be used as a starter without limiting the developer options for the data source/back-end and so , the application will use an online json client such as json placeholder for the data.
 
 
 | Feature | Suggested Implementation.. | current progress |
